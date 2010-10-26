@@ -1,4 +1,4 @@
-# BuildTracer
+# BuildTracer, a plugin for Movable Type
 
 ## About
 
