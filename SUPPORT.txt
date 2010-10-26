@@ -1,2 +1,2 @@
-BuildTracer is not an official Six Apart release. As such, support from Six
-Apart for this plugin is not available.
+BuildTracer is not an official Six Apart release. As such, support for this
+plugin is not available.
