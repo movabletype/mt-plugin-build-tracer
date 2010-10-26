@@ -12,10 +12,10 @@ function select_info(sel) {
     var show = getByID(sel);
     DOM.addClassName(hide, 'hidden');
     DOM.removeClassName(show, 'hidden');
-
 }
 
 var HIDE_CONTROL = 0;
+
 function toggle_control_display(){
     var c = document.getElementById('tracer-control');
     var cc = document.getElementById('control-wrapper');
@@ -46,7 +46,6 @@ function show_tag_info(id){
     str += '</table></div>';
     str += '<div class="taginfo-output"><pre>' + log.out + '</pre></div>';
     getByID('tag-info').innerHTML = str;
-
 }
 
 var CURRENT_VARS;
@@ -500,11 +499,9 @@ function hide_var_value(event) {
     DOM.addClassName('bt_popup', 'hidden');
 }
 
-
 /*
  *     AUTOWALKs
  */
-
 var AUTOWALK;
 
 function toggle_autowalk() {
