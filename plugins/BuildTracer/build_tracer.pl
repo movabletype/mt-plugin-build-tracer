@@ -56,7 +56,7 @@ sub init_registry {
 
     my $menus_v5 = {
         'tools:buildtracer' => {
-            label => 'BuildTracer',
+            label => 'Build Tracer',
             mode  => 'list_fileinfo',
             order => 9000,
             view => ['blog', 'website'],
