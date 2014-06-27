@@ -54,6 +54,15 @@ sub init_registry {
         },
     };
 
+    my $menus_v5 = {
+        'tools:buildtracer' => {
+            label => 'BuildTracer',
+            mode  => 'list_fileinfo',
+            order => 9000,
+            view => ['blog', 'website'],
+        },
+    };
+
     my $methods = {
         'list_fileinfo' => 'BuildTracer::CMS::list_fileinfo',
         'build_tracer'  => 'BuildTracer::CMS::trace',
@@ -65,7 +74,7 @@ sub init_registry {
         },
         applications => {
             cms => {
-                menus   => $menus,
+                menus   => $MT::VERSION >= 5.0 ? $menus_v5 : $menus,
                 methods => $methods,
             },
         },
