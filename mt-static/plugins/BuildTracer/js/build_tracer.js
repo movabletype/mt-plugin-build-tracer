@@ -24,12 +24,14 @@ function toggle_control_display(){
         c.style.height = '120px';
         cc.style.display = 'block';
         document.getElementById('control-toggle').style.backgroundPosition = "0 0";
+        document.getElementById('tracer-wrapper').style.marginTop = "50px";
     }
     else {
         c.style.width = '16px';
         c.style.height = '16px';
         cc.style.display = 'none';
         document.getElementById('control-toggle').style.backgroundPosition = "-16px 0";
+        document.getElementById('tracer-wrapper').style.marginTop = "0";
     }
     HIDE_CONTROL = !HIDE_CONTROL;
 }

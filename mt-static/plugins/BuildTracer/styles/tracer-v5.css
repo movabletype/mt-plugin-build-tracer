@@ -6,12 +6,37 @@
     z-index: 10000;
 }
 
+#tracer-wrapper {
+    margin-top: 50px;
+}
+
+#control-contents {
+    border: none;
+    background-color: #abc;
+}
+
+#control-contents .tab {
+    height: 22px;
+}
+
 #control-contents .widget-header {
     padding: 0;
+    background-image: none;
+    background-color: #abc;
+    border-radius: 0px;
+    padding: 0px;
 }
 
 #control-contents .widget-content {
     padding: 0;
+}
+
+#control-contents .widget-label {
+    display: block;
+}
+
+#control-contents .widget-label h2 {
+    display: none;
 }
 
 #control-contents.widget {
@@ -23,8 +48,27 @@
     border: 0;
 }
 
+#fileinfo-panel table {
+    margin-left: 0px;
+}
+
+.legend-block {
+    margin-top: -15px;
+}
+
+.legend-block dt {
+    font-weight: bold;
+}
+
+.legend-block dd {
+    margin-left: 0px;
+}
+
 #tracer div pre {
     margin: 0;
     padding: 0;
 }
 
+ul.tabs li {
+    font-size: 13px;
+}
