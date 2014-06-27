@@ -168,7 +168,10 @@ sub trace {
     my $timing = !$can_timing ? 0
                : $no_timing   ? 0
                :                1;
-    my $fi = MT::FileInfo->load({'url' => $url});
+    my $fi = MT::FileInfo->load({
+        'url' => $url,
+        'blog_id' => $blog_id,
+    });
     die "unknown url $url"
         unless $fi;
     $blog_id = $fi->blog_id;
