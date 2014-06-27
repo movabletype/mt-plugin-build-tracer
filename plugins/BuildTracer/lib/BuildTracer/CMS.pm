@@ -182,6 +182,9 @@ sub trace {
         local *MT::Builder::build = BuildTracer::Builder->builder;
         local *MT::FileMgr::Local::content_is_updated = sub { 0 };
         my $pub = MT::WeblogPublisher->new;
+        # Allow build tracing of templates published via publish queue
+        # Important: prevents requeuing!
+        $fi->{from_queue} = 1;
         $pub->rebuild_from_fileinfo($fi)
             or $error = $pub->errstr;
     }
