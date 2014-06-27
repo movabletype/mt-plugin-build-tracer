@@ -14,6 +14,7 @@ and shows how long each tag takes to publish in an individual template.
 
 ## Versions
 
+ * 0.6 works with MT 5 and MT 6.
  * 0.5 works with MT 4.3, MT 4.261, MT 4.25, and MT 4.24.
  * 0.4 works with MT 4.24 and below
  * 0.3.1 works with MT 4.1.
@@ -26,9 +27,9 @@ installation directory.
 
 ## Usage
 
-Once installed, a command "FileInfo" will appear in each blog's Manage menu.
-Go to Manage -> File Info, and click on an index template to view the trace
-result Time stamps are displayed next to each template block to indicate how
+Once installed, a command "Build Tracer" will appear in each blog's Tools menu.
+Go to Tools -> Build Tracer, and click on an index template to view the trace
+result. Time stamps are displayed next to each template block to indicate how
 long they take to evaluate/publish, as well as an overall time for the entire
 template.
 
@@ -41,4 +42,4 @@ Originally written by Akira Sawada.
 
 Blog: <http://blog.aklaswad.com/>
 
-Original plugin page: <http://mt.aklaswad.com/plugins/buildtracer.html>
+Original plugin page: <https://github.com/aklaswad/mt-plugin-BuildTracer>
